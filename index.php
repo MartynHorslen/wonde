@@ -7,7 +7,7 @@ $curl = curl_init();
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 // Set the url
 curl_setopt($curl, CURLOPT_URL,$url);
-//Set api key
+// Set api key
 curl_setopt($curl, CURLOPT_HTTPHEADER, array(
     'Authorization: ' . $apiKey
     ));
@@ -27,7 +27,9 @@ foreach($json['data'] as $id => $employee)
         array_push($teachers, $employeeName);
     }
 }
-echo "There are " . count($teachers) . " teaching staff out of " . $employees . " employees.<br/>";
+echo "There are " . count($teachers) . " teaching staff out of " . $employees . " employees.<br/><br/>";
+
+sort($teachers);
 
 foreach($teachers as $teacher){
     echo $teacher . "<br/>";
