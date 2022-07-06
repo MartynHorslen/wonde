@@ -25,5 +25,5 @@ Could also do a couple subqueries to get that information in the insert statemen
 # Task 3 - Laravel
 - After cloning and installing the project, I first fixed seeding the database by uncommenting the database seeder for the User factory and reseeding.
 - Uncommented the foreach loop in the index blade. The app now displays all the users.
-- I fixed the route for the store action from get to post. The 'add new user form' functions again.
+- I fixed the route for the 'store' action from get to post. The 'add new user form' functions again.
 ![Users](https://gyazo.com/9ab9f12f666e74a1547a09c1092c83ef.png)
